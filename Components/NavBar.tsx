@@ -1,9 +1,11 @@
 import Logo from "./Logo";
+import MenuIcon from "./MenuIcon";
 
 export default function NavBar(){
   return(
     <>
-    <div>
+    <div className="bg-gray-800 flex justify-between">
+      <MenuIcon/>
       <Logo/>
     </div>
     
