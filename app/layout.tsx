@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Iceland } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/Components/NavBar";
 
@@ -11,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+const iceland = Iceland({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-iceland',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${iceland.variable} 
+        // ${geistSans.variable} ${geistMono.variable} antialiased`
+      }
       >
         <NavBar/>
         {children}
