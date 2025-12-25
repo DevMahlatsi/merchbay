@@ -5,10 +5,11 @@ export default function MenuIcon() {
     <>
       <div className="menu-icon">
        
-        <img 
-          src="/menu-icon.svg"
+        <img
+          src="/menu-svgrepo.svg"
           
           alt="It's supposed to be the Menu Icon here" />
+          
       </div>
     </>
   )
