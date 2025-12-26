@@ -5,7 +5,7 @@ import MenuIcon from "./MenuIcon";
 export default function NavBar(){
   return(
     <>
-    <div className="bg-gray-800 flex justify-between">
+    <div className="bg-gray-800 flex justify-between px-3 py-2">
       <MenuIcon/>
       <Logo/>
       <Cart/>
