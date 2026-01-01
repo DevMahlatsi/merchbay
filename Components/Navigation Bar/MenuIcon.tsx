@@ -1,9 +1,17 @@
-
+'use client';
+import {useState} from "react";
+import Toast from "../Toast/Toast";
 
 export default function MenuIcon() {
+  
+const [showToast, setShowToast] = useState(false);
+  
+const handleComingSoon = () => {
+    setShowToast(true);
+  };
   return(
     <>
-      <div className="menu-icon">
+      <div className="menu-icon" onClick={handleComingSoon}>
         <img
           src="/menu-svgrepo.svg"
           
@@ -12,6 +20,11 @@ export default function MenuIcon() {
           />
           
       </div>
+      <Toast
+        message="Menu feature not available yet!"
+        visible={showToast}
+        onClose={() => setShowToast(false)}
+        />
     </>
   )
 };
