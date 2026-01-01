@@ -1,12 +1,10 @@
-import NavBar from "@/Components/NavBar"
+import Hero from "@/Components/Hero/Hero"
+import NavBar from "@/Components/Navigation Bar/NavBar"
 
 export default function Home(){
   return(
     <>
-    <>Hello, Jeremia says. Got me up whole night.
-    <br />
-    <h2>I am building the app right now </h2>
-    </>
+    <Hero/>
     </>
     
   )
