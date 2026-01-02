@@ -12,18 +12,38 @@ export default function ProductsLayout({title}: ProductLayoutProps){
   }, [title]);
   return(
     <>
-      <div className="container bg-amber-50  text-blue-950">
-        <div className="header">
-          <Title
-            headingTitle={title}
+    <div className="main-container">
+      <div className="sub-container">
+        <div className="product-container mt-2 bg-amber-50  text-blue-950">
+          <div className="header">
+            <Title
+              headingTitle={title}
             />  
         </div>
-        {/* It is probably a good idea to make this product a component of it's own. It can be used in so many other places so it's only fair if it is like that and it would make the code shorter to read  */}
+        {/* to be made it's own component */}
         <div className="products">
-          <br /><br /><br />
+          <br /><br />
           Here it will be the categories and this time we hope to put it in a carosel
         </div>
       </div>
+      <div className="sub-container">
+        <div className="product-container mt-2 bg-amber-50  text-blue-950">
+          <div className="header">
+            <Title
+              headingTitle={title}
+            />  
+        </div>
+        {/* to be made it's own component */}
+        <div className="products">
+          <br /><br />
+          Here it will be the categories and this time we hope to put it in a carosel
+        </div>
+      </div>
+      
+    </div>
+      
+    </div>
+      
     </>
   )
 
