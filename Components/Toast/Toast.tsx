@@ -1,10 +1,7 @@
+import { ToastProps } from "@/Types/Merchbay";
 import { useEffect } from "react";
 
-type ToastProps = {
-  message: string;
-  visible: boolean;
-  onClose: () => void;
-};
+
 
 export default function Toast({ message, visible, onClose }: ToastProps) {
   useEffect(() => {
