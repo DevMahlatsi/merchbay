@@ -1,15 +1,25 @@
 "use client";
-import { ProductLayoutProps } from "@/Types/Merchbay";
-import { useEffect } from "react";
+import { Product, ProductLayoutProps } from "@/Types/Merchbay";
+import { useEffect, useState } from "react";
 import Title from "../Headers/Title";
 import HeadingTitle from "../Headers/Title";
 
 export default function ProductsLayout({title}: ProductLayoutProps){
+  const [products, setProducts] = useState<Product[]>([]);
   useEffect(() => {
-    if(!(title.length === 0)){
-      
+  const fetchData = async () => {
+    try {
+      const data = await getProducts();
+      setProducts(data);
+      console.log(products)
+    } catch (error) {
+      console.error(error);
     }
-  }, [title]);
+  };
+
+  fetchData();
+  }, []);
+
   return(
     <>
     <div className="main-container">
