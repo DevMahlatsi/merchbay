@@ -64,4 +64,12 @@ body {
 .toast.show {
   right: 20px;
 }
+.product-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.product-card:hover{
+  transition-duration:.5s ;
+  transition-timing-function: ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 

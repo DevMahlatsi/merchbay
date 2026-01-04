@@ -2,7 +2,8 @@
 import { Product, ProductLayoutProps } from "@/Types/Merchbay";
 import { useEffect, useState } from "react";
 import Title from "../Headers/Title";
-import HeadingTitle from "../Headers/Title";
+import { getProducts } from "@/api/Products";
+import ProductCard from "../Product Component/ProductCard";
 
 export default function ProductsLayout({title}: ProductLayoutProps){
   const [products, setProducts] = useState<Product[]>([]);
@@ -11,7 +12,7 @@ export default function ProductsLayout({title}: ProductLayoutProps){
     try {
       const data = await getProducts();
       setProducts(data);
-      console.log(products)
+      
     } catch (error) {
       console.error(error);
     }
@@ -32,6 +33,9 @@ export default function ProductsLayout({title}: ProductLayoutProps){
         <div className="products">
           <br /><br />
           Here it will be the categories and this time we hope to put it in a carosel
+          <ProductCard 
+            products={products}         
+            />
         </div>
       </div>
       </div>

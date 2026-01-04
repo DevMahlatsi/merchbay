@@ -24,3 +24,6 @@ export interface Product {
   image: string;
   rating: Rating;
 }
+export interface ProductCardProps {
+  products: Product[];
+}
