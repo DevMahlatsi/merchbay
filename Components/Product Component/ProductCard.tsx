@@ -1,12 +1,16 @@
 import { ProductCardProps } from "@/Types/Merchbay";
 
 export default function ProductCard({products}: ProductCardProps){
-  if(!(products.length === 0)){
-    <p>Looks like it's going to work</p>
+  if(products.length === 0){
+   return(
+    <p className="text-center py-8">
+      No products found
+    </p>
+   )
   }
   return(
     <div
-      className="flex flex-wrap"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >{products.map((product) => (
       <div className="product-card h-60 max-w-55 mb-1 p-1 cursor-pointer mr-20" key={product.id}>
         <div className="top-half flex justify-center">
