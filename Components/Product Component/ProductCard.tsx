@@ -6,12 +6,12 @@ export default function ProductCard({products}: ProductCardProps){
   }
   return(
     <div
-      className="flex"
+      className="flex flex-wrap"
       >{products.map((product) => (
-      <div className="product-card min-w-55 mb-1 p-1 cursor-pointer " key={product.id}>
+      <div className="product-card h-60 max-w-55 mb-1 p-1 cursor-pointer mr-20" key={product.id}>
         <div className="top-half flex justify-center">
           <img
-            className="h-35" src={product.image} alt={product.description} />
+            className="h-35" loading="lazy" src={product.image} alt={product.description} />
         </div>
         <div className="bottom-half">
           <div className="title">

@@ -27,3 +27,7 @@ export interface Product {
 export interface ProductCardProps {
   products: Product[];
 }
+export interface ImageCarouselProps{
+  images: string[];
+  productTitle: string;
+}
