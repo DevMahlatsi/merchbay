@@ -31,8 +31,26 @@ export default function ImageCarusel({images, productTitle}: ImageCarouselProps)
         <img 
           src={images[currentIndex]} 
           alt={`${productTitle} - Image ${currentIndex + 1}`} 
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+          />
       </div>
+      <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-white" />
+      <button 
+      onClick={goToPrevious}
+      className="hover:bg-white p-2 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100" 
+      aria-label="Previous image">
+        <ChevronLeft size={24}/>
+      </button>
+      <button 
+        onClick={goToNext}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+        aria-label="Next Imge">
+
+        <ChevronRight size={24}/>
+      </button>
+
+      
+
     </div>
   )
 
