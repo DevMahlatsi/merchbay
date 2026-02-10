@@ -7,6 +7,8 @@ interface ProductPageProps {
 export default async function ProductPage({ params }: ProductPageProps) {
   const { id } = params;
 
+
+
   return (
     <div>
       <h1>
