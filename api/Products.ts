@@ -3,13 +3,13 @@ import { Product } from "@/Types/Merchbay";
 export async function getProducts(): Promise<Product[]>{
     // Your async logic here
     try {
-      const response = await fetch(`https://fakestoreapi.com/products`);
+      const response = await fetch(`api/products`);
       if(!response.ok){
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       return data;
 
     } catch (error) {

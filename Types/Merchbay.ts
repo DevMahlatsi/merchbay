@@ -16,13 +16,17 @@ export interface Rating {
   count: number;
 };
 export interface Product {
-  id: number;
+  plid: number;
   title: string;
   price: number;
   description: string;
   category: string;
-  image: string;
+  images: imageTypes;
   rating: Rating;
+}
+export interface imageTypes{
+  main: string;
+  mockup: string;
 }
 export interface ProductCardProps {
   products: Product[];
