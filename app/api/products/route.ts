@@ -48,7 +48,7 @@ const products = [
   },
   {
     plid: 4,
-    title: "SK Brook Wanted Poster",
+    title: "SK Brook Poster",
     variants: [
       {size: "A2", price: 30.00},
       {size: "A3", price: 20.00},
@@ -62,7 +62,7 @@ const products = [
   },
   {
     plid: 5,
-    title: "Trafalgar Law Wanted Poster",
+    title: "Trafalgar Law Poster",
     variants: [
       {size: "A2", price: 30.00},
       {size: "A3", price: 20.00},
@@ -90,7 +90,7 @@ const products = [
   },
   {
     plid: 7,
-    title: "Vista Wanted Poster",
+    title: "Vista Poster",
     variants: [
       {size: "A2", price: 30.00},
       {size: "A3", price: 20.00},
@@ -102,6 +102,35 @@ const products = [
       mockup: "/images/anime/one-piece/vista_wanted_poster_7_mockup.png"
     }
   },
+  {
+    plid: 8,
+    title: "Franky Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/franky_wanted_poster_8_main.jpg",
+      mockup: "/images/anime/one-piece/franky_wanted_poster_8_mockup.png"
+    }
+  },
+  {
+    plid: 9,
+    title: "Portgas D Ace Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/ace_wanted_poster_9_main.jpg",
+      mockup: "/images/anime/one-piece/ace_wanted_poster_9_mockup.png"
+    }
+  },
+  
   
   
   
