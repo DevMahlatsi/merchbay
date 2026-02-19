@@ -74,6 +74,35 @@ const products = [
       mockup: "/images/anime/one-piece/trafalgar_wanted_poster_5_mockup.png"
     }
   },
+    {
+    plid: 6,
+    title: "Dracule Mihawk Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/mihawk_wanted_poster_6_main.jpg",
+      mockup: "/images/anime/one-piece/mihawk_wanted_poster_6_mockup.png"
+    }
+  },
+  {
+    plid: 7,
+    title: "Vista Wanted Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/vista_wanted_poster_7_main.jpg",
+      mockup: "/images/anime/one-piece/vista_wanted_poster_7_mockup.png"
+    }
+  },
+  
   
   
   
