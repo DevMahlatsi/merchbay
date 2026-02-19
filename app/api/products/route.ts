@@ -130,6 +130,51 @@ const products = [
       mockup: "/images/anime/one-piece/ace_wanted_poster_9_mockup.png"
     }
   },
+  {
+    plid: 10,
+    title: "Whitebeard Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/newgate_wanted_poster_10_main.jpg",
+      mockup: "/images/anime/one-piece/newgate_wanted_poster_10_mockup.png"
+    }
+  },
+  {
+    plid: 11,
+    title: "Vinsmoke Sanji Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/sanji_wanted_poster_11_main.jpg",
+      mockup: "/images/anime/one-piece/sanji_wanted_poster_11_mockup.png"
+    }
+  },
+  {
+    plid: 12,
+    title: "Gol D Roger Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/roger_wanted_poster_12_main.jpg",
+      mockup: "/images/anime/one-piece/roger_wanted_poster_12_mockup.png"
+    }
+  },
+  
+  
+  
   
   
   
