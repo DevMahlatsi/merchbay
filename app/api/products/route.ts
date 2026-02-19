@@ -60,6 +60,21 @@ const products = [
       mockup: "/images/anime/one-piece/brook_wanted_poster_4_mockup.png"
     }
   },
+  {
+    plid: 5,
+    title: "Trafalgar Law Wanted Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/trafalgar_wanted_poster_5_main.jpg",
+      mockup: "/images/anime/one-piece/trafalgar_wanted_poster_5_mockup.png"
+    }
+  },
+  
   
   
 ];
