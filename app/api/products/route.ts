@@ -172,6 +172,21 @@ const products = [
       mockup: "/images/anime/one-piece/roger_wanted_poster_12_mockup.png"
     }
   },
+  {
+    plid: 13,
+    title: "Chopper Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/anime/one-piece/chopper_wanted_poster_13_main.jpg",
+      mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  
   
   
   
