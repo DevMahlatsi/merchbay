@@ -266,10 +266,39 @@ const products = [
       
     ],
     images: {
-      main: "/images/music/hiphop/gnx_kendrick_lamar_poster_8_main.jpg",
+      main: "/images/music/hiphop/n'wana_wa_mutsonga_kelvin_momo_poster_3_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
     }
   },
+  {
+    plid: 20,
+    title: "STARBOY Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/starboy_the_weeknd_poster_2_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  {
+    plid: 15,
+    title: "Take Care Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/take_care_drake_poster_9_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  
   
   
   
