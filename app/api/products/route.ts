@@ -186,8 +186,34 @@ const products = [
       mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
     }
   },
-  
-  
+  {
+    plid: 14,
+    title: "BAB' MOTHA Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/bab_motha_kabza_de_small_poster_5_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  {
+    plid: 15,
+    title: "GNX Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/gnx_kendrick_lamar_poster_8_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
   
   
   
