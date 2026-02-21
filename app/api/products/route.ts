@@ -228,6 +228,49 @@ const products = [
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
     }
   },
+  {
+    plid: 17,
+    title: "IVY LEAGUE Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/ivy_league_kelvin_momo_poster_7_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  {
+    plid: 18,
+    title: "MORE LIFE Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/more_life_drake_poster_1_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  {
+    plid: 19,
+    title: "N'WANA WA MUTSONGA Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/gnx_kendrick_lamar_poster_8_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  
   
   
   
