@@ -285,7 +285,7 @@ const products = [
     }
   },
   {
-    plid: 15,
+    plid: 21,
     title: "Take Care Poster",
     variants: [
       {size: "A2", price: 30.00},
@@ -298,6 +298,21 @@ const products = [
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
     }
   },
+  {
+    plid: 22,
+    title: "Thato Yo Modimo Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/thato_ya_modimo_kelvin_momo_poster_4_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
+  
   
   
   
