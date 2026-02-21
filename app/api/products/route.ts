@@ -214,6 +214,20 @@ const products = [
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
     }
   },
+  {
+    plid: 16,
+    title: "ISIBUKO Poster",
+    variants: [
+      {size: "A2", price: 30.00},
+      {size: "A3", price: 20.00},
+      {size: "A4", price: 10.00},
+      
+    ],
+    images: {
+      main: "/images/music/hiphop/isibuko_sjava_poster_6_main.jpg",
+      // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
+    }
+  },
   
   
   
