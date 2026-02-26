@@ -11,22 +11,21 @@ export type ToastProps = {
   onClose: () => void;
 };
 
-export interface Rating {
-  rate: number;
-  count: number;
-};
+export interface Variant {
+  size: string;
+  price: number;
+}
+
+export interface ProductImages {
+  main: string;
+  mockup: string;
+}
+
 export interface Product {
   plid: number;
   title: string;
-  price: number;
-  description: string;
-  category: string;
-  images: imageTypes;
-  rating: Rating;
-}
-export interface imageTypes{
-  main: string;
-  mockup: string;
+  variants: Variant[];
+  images: ProductImages;
 }
 export interface ProductCardProps {
   products: Product[];

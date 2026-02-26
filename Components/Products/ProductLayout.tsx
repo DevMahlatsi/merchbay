@@ -33,9 +33,9 @@ export default function ProductsLayout({title}: ProductLayoutProps){
         <div className="products">
           <br /><br />
           Here it will be the categories and this time we hope to put it in a carosel
-          <ProductCard 
-            products={products}         
-            />
+          {products.map((product) => (
+  <ProductCard key={product.plid} product={product} />
+))}
         </div>
       </div>
       </div>
