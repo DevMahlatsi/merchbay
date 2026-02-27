@@ -1,7 +1,7 @@
 export default function Logo(){
   return(
     <>
-      <div className="text-3xl cursor-pointer">Merch Bay</div>
+      <div className="text-3xl cursor-pointer text-white">Merch Bay</div>
     </>
   )
 }

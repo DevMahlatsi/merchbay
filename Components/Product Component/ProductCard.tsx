@@ -18,35 +18,30 @@ export default function SingleProductCard({ product }: Props) {
     (v) => v.size === selectedSize
   )!;
 
-  const lowestPrice = Math.min(
-    ...product.variants.map((v) => v.price)
-  );
-
   const toggleImage = () => {
     setImageIndex((prev) => (prev === 0 ? 1 : 0));
   };
 
   return (
-    <div className="w-80 bg-white rounded-3xl shadow-xl p-5">
+    <div className="w-64 bg-white rounded-2xl shadow-lg p-4 flex flex-col h-full">
+      {/* Image container */}
       <div
-        className="rounded-2xl overflow-hidden cursor-pointer"
+        className="rounded-xl overflow-hidden cursor-pointer bg-gray-50 flex items-center justify-center h-48"
         onClick={toggleImage}
       >
         <img
           src={images[imageIndex]}
           alt={product.title}
-          className="w-full object-cover"
+          className="max-w-full max-h-full object-contain"
         />
       </div>
 
-      <h2 className="mt-4 text-2xl font-semibold text-gray-800">
+      {/* Title */}
+      <h2 className="mt-3 text-lg font-semibold text-gray-800 line-clamp-2 h-14">
         {product.title}
       </h2>
 
-      <p className="text-gray-500 text-lg mt-1">
-        From <span className="font-semibold text-gray-700">R {lowestPrice}</span>
-      </p>
-
+      {/* Size selector with bigger font */}
       <div className="flex gap-6 mt-4">
         {product.variants.map((variant) => (
           <label
@@ -59,25 +54,27 @@ export default function SingleProductCard({ product }: Props) {
               value={variant.size}
               checked={selectedSize === variant.size}
               onChange={() => setSelectedSize(variant.size)}
-              className="accent-yellow-500"
+              className="accent-yellow-500 w-4 h-4" // Slightly bigger radio button
             />
-            <span className="text-gray-700 font-medium">
+            <span className="text-gray-700 text-base font-medium">
               {variant.size}
             </span>
           </label>
         ))}
       </div>
 
-      <div className="mt-4 text-xl font-bold text-gray-800">
+      {/* Price with bigger font */}
+      <div className="mt-3 text-2xl font-bold text-gray-800">
         R {selectedVariant.price}
       </div>
 
-      <div className="flex gap-3 mt-5">
-        <button className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold py-3 rounded-xl shadow-md hover:opacity-90 transition">
+      {/* Buttons */}
+      <div className="flex gap-2 mt-5">
+        <button className="flex-1 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold py-2.5 text-sm rounded-lg shadow-md hover:opacity-90 transition">
           Buy Now
         </button>
 
-        <button className="w-14 border rounded-xl flex items-center justify-center hover:bg-gray-100 transition">
+        <button className="w-10 border rounded-lg flex items-center justify-center hover:bg-gray-100 transition text-lg">
           🛒
         </button>
       </div>
