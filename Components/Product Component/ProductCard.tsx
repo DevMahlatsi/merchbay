@@ -4,6 +4,30 @@ import { Product } from "@/Types/Merchbay";
 interface Props {
   product: Product;
 }
+const formatWhatsAppMessage = (
+  product: Product, 
+  selectedSize: string, 
+  price: number
+) => {
+  const message = `
+Hi
+
+I'd like to place an order for the following item:
+
+Product Name: ${product.title}
+Product ID: ${product.plid}
+Selected Size: ${selectedSize}
+Price: R${price}
+
+Please let me know:
+• Availability
+• Delivery / collection options
+• Total cost including shipping
+  `;
+  
+  // Encode the message for URL
+  return encodeURIComponent(message.trim());
+}
 
 export default function SingleProductCard({ product }: Props) {
   const [selectedSize, setSelectedSize] = useState(
@@ -20,6 +44,23 @@ export default function SingleProductCard({ product }: Props) {
 
   const toggleImage = () => {
     setImageIndex((prev) => (prev === 0 ? 1 : 0));
+  };
+  const handleWhatsAppOrder = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent card click if you have one
+    
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;;
+    
+    const message = formatWhatsAppMessage(
+      product, 
+      selectedSize, 
+      selectedVariant.price
+    );
+    
+    // Create WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    // Open in new tab
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -71,7 +112,9 @@ export default function SingleProductCard({ product }: Props) {
 
       {/* Buttons */}
       <div className="flex gap-2 mt-5">
-        <button className="flex-1 bg-gray-800 text-white font-semibold py-2.5 text-sm rounded-lg shadow-md hover:opacity-90 transition">
+        <button
+        onClick={handleWhatsAppOrder}
+        className="flex-1 bg-gray-800 text-white font-semibold py-2.5 text-sm rounded-lg shadow-md hover:opacity-90 transition">
           Buy Now
         </button>
 
