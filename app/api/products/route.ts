@@ -16,7 +16,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/luffy_wanted_poster_1_main.jpg",
       mockup: "/images/anime/one-piece/luffy_wanted_poster_1_mockup.png"
-    }
+    },
+    search_param: "One Piece, Monkey D Luffy"
   },
   {
     plid: 2,
@@ -30,7 +31,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/zoro_wanted_poster_2_main.jpg",
       mockup: "/images/anime/one-piece/zoro_wanted_poster_2_mockup.png"
-    }
+    },
+    search_param: "One Piece, Roronoa Zoro"
   },
   {
     plid: 3,
@@ -44,7 +46,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/usopp_wanted_poster_3_main.jpg",
       mockup: "/images/anime/one-piece/usopp_wanted_poster_3_mockup.png"
-    }
+    },
+    search_param: "One Piece, God Usopp"
   },
   {
     plid: 4,
@@ -58,7 +61,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/brook_wanted_poster_4_main.jpg",
       mockup: "/images/anime/one-piece/brook_wanted_poster_4_mockup.png"
-    }
+    },
+    search_param: "One Piece, SK Brook"
   },
   {
     plid: 5,
@@ -72,7 +76,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/trafalgar_wanted_poster_5_main.jpg",
       mockup: "/images/anime/one-piece/trafalgar_wanted_poster_5_mockup.png"
-    }
+    },
+    search_param: "One Piece, Trafalgar Law"
   },
     {
     plid: 6,
@@ -86,7 +91,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/mihawk_wanted_poster_6_main.jpg",
       mockup: "/images/anime/one-piece/mihawk_wanted_poster_6_mockup.png"
-    }
+    },
+    search_param: "One Piece, Dracule Mihawk"
   },
   {
     plid: 7,
@@ -100,7 +106,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/vista_wanted_poster_7_main.jpg",
       mockup: "/images/anime/one-piece/vista_wanted_poster_7_mockup.png"
-    }
+    },
+    search_param: "One Piece, Vista"
   },
   {
     plid: 8,
@@ -114,7 +121,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/franky_wanted_poster_8_main.jpg",
       mockup: "/images/anime/one-piece/franky_wanted_poster_8_mockup.png"
-    }
+    },
+    search_param: "One Piece, Franky"
   },
   {
     plid: 9,
@@ -128,7 +136,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/ace_wanted_poster_9_main.jpg",
       mockup: "/images/anime/one-piece/ace_wanted_poster_9_mockup.png"
-    }
+    },
+    search_param: "One Piece, Portgas D Ace"
   },
   {
     plid: 10,
@@ -142,7 +151,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/newgate_wanted_poster_10_main.jpg",
       mockup: "/images/anime/one-piece/newgate_wanted_poster_10_mockup.png"
-    }
+    },
+    search_param: "One Piece, Whitebeard"
   },
   {
     plid: 11,
@@ -156,7 +166,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/sanji_wanted_poster_11_main.jpg",
       mockup: "/images/anime/one-piece/sanji_wanted_poster_11_mockup.png"
-    }
+    },
+    search_param: "One Piece, Vinsmoke Sanji"
   },
   {
     plid: 12,
@@ -170,7 +181,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/roger_wanted_poster_12_main.jpg",
       mockup: "/images/anime/one-piece/roger_wanted_poster_12_mockup.png"
-    }
+    },
+    search_param: "One Piece, Gol D Roger"
   },
   {
     plid: 13,
@@ -184,7 +196,8 @@ const products = [
     images: {
       main: "/images/anime/one-piece/chopper_wanted_poster_13_main.jpg",
       mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "One Piece, Chopper"
   },
   {
     plid: 14,
@@ -198,7 +211,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/bab_motha_kabza_de_small_poster_5_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Kabza De Small, BAB' MOTHA"
   },
   {
     plid: 15,
@@ -212,7 +226,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/gnx_kendrick_lamar_poster_8_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Kendrick Lamar, GNX"
   },
   {
     plid: 16,
@@ -226,7 +241,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/isibuko_sjava_poster_6_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Sjava, ISIBUKO"
   },
   {
     plid: 17,
@@ -240,7 +256,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/ivy_league_kelvin_momo_poster_7_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Kelvin Momo, IVY LEAGUE"
   },
   {
     plid: 18,
@@ -254,7 +271,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/more_life_drake_poster_1_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Drake, MORE LIFE"
   },
   {
     plid: 19,
@@ -268,7 +286,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/n'wana_wa_mutsonga_kelvin_momo_poster_3_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Kelvin Momo, N'WANA WA MUTSONGA"
   },
   {
     plid: 20,
@@ -282,7 +301,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/starboy_the_weeknd_poster_2_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "The Weeknd, STARBOY"
   },
   {
     plid: 21,
@@ -296,7 +316,8 @@ const products = [
     images: {
       main: "/images/music/hiphop/take_care_drake_poster_9_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Drake, Take Care"
   },
   {
     plid: 22,
@@ -310,18 +331,9 @@ const products = [
     images: {
       main: "/images/music/hiphop/thato_ya_modimo_kelvin_momo_poster_4_main.jpg",
       // mockup: "/images/anime/one-piece/chopper_wanted_poster_13_mockup.png"
-    }
+    },
+    search_param: "Kelvin Momo, Thato Yo Modimo"
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 ];
 
 export async function GET() {
