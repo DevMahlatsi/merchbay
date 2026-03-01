@@ -14,6 +14,16 @@ export default function Home(){
     <ProductsLayout
       title = "Fan Faves That You Can't Miss"
     />
+    {/* <ProductsLayout 
+      title="Musiek"
+    />
+    <ProductsLayout 
+      title="Musiek"
+    />
+    <ProductsLayout 
+      title="Musiek"
+    /> */}
+    
     </>
   )
 }
