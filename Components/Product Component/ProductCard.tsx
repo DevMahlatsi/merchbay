@@ -1,5 +1,7 @@
+import { FaShoppingCart } from "react-icons/fa";
 import { useState } from "react";
 import { Product } from "@/Types/Merchbay";
+import Toast from "../Toast/Toast";
 
 interface Props {
   product: Product;
@@ -30,6 +32,11 @@ Please let me know:
 }
 
 export default function SingleProductCard({ product }: Props) {
+  const [showToast, setShowToast] = useState(false);
+
+const handleComingSoon = () => {
+    setShowToast(true);
+  };
   const [selectedSize, setSelectedSize] = useState(
     product.variants[0].size
   );
@@ -64,6 +71,7 @@ export default function SingleProductCard({ product }: Props) {
   };
 
   return (
+    <>
     <div className="w-64 bg-white rounded-2xl shadow-lg p-4 flex flex-col h-full">
       {/* Image container */}
       <div
@@ -118,10 +126,16 @@ export default function SingleProductCard({ product }: Props) {
           Buy Now
         </button>
 
-        <button className="w-10 border rounded-lg flex items-center justify-center hover:bg-gray-100 transition text-lg">
+        <button onClick={handleComingSoon} className="w-10 border rounded-lg flex items-center justify-center hover:bg-gray-100 transition text-lg">
           🛒
         </button>
       </div>
     </div>
+    <Toast
+      message="Add to cart feature is not available yet!"
+      visible={showToast}
+      onClose={() => setShowToast(false)}
+      />
+      </>
   );
 }
