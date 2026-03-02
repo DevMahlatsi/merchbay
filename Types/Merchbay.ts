@@ -1,5 +1,6 @@
 export type ProductLayoutProps = {
   title: string;
+  products: Product[];
   //we are expecting a json file here
 }
 export type HeaderProps = {

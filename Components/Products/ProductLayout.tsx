@@ -5,22 +5,11 @@ import Title from "../Headers/Title";
 import { getProducts } from "@/api/Products";
 import ProductCard from "../Product Component/ProductCard";
 
-export default function ProductsLayout({ title }: ProductLayoutProps) {
-  const [products, setProducts] = useState<Product[]>([]);
+export default function ProductsLayout({ title,products }: ProductLayoutProps) {
+  // const [products, setProducts] = useState<Product[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await getProducts();
-        setProducts(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, []);
+ 
 
   // Optional: Add scroll buttons functionality
   const scroll = (direction: 'left' | 'right') => {
