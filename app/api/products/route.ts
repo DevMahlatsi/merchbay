@@ -11,7 +11,7 @@ const products = [
     franchise: "One Piece",
     character: "Monkey D Luffy",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],

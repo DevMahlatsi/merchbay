@@ -15,6 +15,7 @@ export type ToastProps = {
 export interface Variant {
   size: string;
   price: number;
+  available: boolean;
 }
 
 export interface ProductImages {
