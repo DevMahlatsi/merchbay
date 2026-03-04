@@ -12,7 +12,7 @@ export default function Home(){
     const fetchData = async () => {
       try {
         const data = await getProducts();
-        setProducts(data);
+        setProducts(data.reverse());
       } catch (error) {
         console.error(error);
       }

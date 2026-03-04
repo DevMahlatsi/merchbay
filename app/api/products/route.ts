@@ -28,7 +28,7 @@ const products = [
     franchise: "One Piece",
     character: "Roronoa Zoro",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -45,7 +45,7 @@ const products = [
     franchise: "One Piece",
     character: "Usopp",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -62,7 +62,7 @@ const products = [
     franchise: "One Piece",
     character: "Brook",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -79,7 +79,7 @@ const products = [
     franchise: "One Piece",
     character: "Trafalgar Law",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -96,7 +96,7 @@ const products = [
     franchise: "One Piece",
     character: "Dracule Mihawk",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -113,7 +113,7 @@ const products = [
     franchise: "One Piece",
     character: "Vista",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -130,7 +130,7 @@ const products = [
     franchise: "One Piece",
     character: "Franky",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -147,7 +147,7 @@ const products = [
     franchise: "One Piece",
     character: "Portgas D Ace",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -164,7 +164,7 @@ const products = [
     franchise: "One Piece",
     character: "Edward Newgate",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -181,7 +181,7 @@ const products = [
     franchise: "One Piece",
     character: "Sanji",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -198,7 +198,7 @@ const products = [
     franchise: "One Piece",
     character: "Gol D Roger",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -215,7 +215,7 @@ const products = [
     franchise: "One Piece",
     character: "Tony Tony Chopper",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -235,7 +235,7 @@ const products = [
     artist: "Kabza De Small",
     album: "BAB' MOTHA",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -252,7 +252,7 @@ const products = [
     artist: "Kendrick Lamar",
     album: "GNX",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -269,7 +269,7 @@ const products = [
     artist: "Sjava",
     album: "ISIBUKO",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -286,7 +286,7 @@ const products = [
     artist: "Kelvin Momo",
     album: "IVY LEAGUE",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -304,7 +304,7 @@ const products = [
     album: "More Life",
     releaseYear: 2017,
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -321,7 +321,7 @@ const products = [
     artist: "Kelvin Momo",
     album: "N'WANA WA MUTSONGA",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -339,7 +339,7 @@ const products = [
     album: "Starboy",
     releaseYear: 2016,
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -357,7 +357,7 @@ const products = [
     album: "Take Care",
     releaseYear: 2011,
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
@@ -374,7 +374,7 @@ const products = [
     artist: "Kelvin Momo",
     album: "Thato Yo Modimo",
     variants: [
-      {size: "A2", price: 30.00, available: false},
+      // {size: "A2", price: 30.00, available: false},
       {size: "A3", price: 20.00, available: true},
       {size: "A4", price: 10.00, available: true},
     ],
