@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import ProductsLayout from "@/Components/Products/ProductLayout";
-import SearchSection from "@/Components/Search/SearchBar";
+import SearchSection from "@/Components/search/SearchBar";
 import { getProducts } from "@/api/Products";
 import { Product } from "@/Types/Merchbay";
 

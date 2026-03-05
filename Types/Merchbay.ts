@@ -31,6 +31,10 @@ export interface Product {
   variants: Variant[];
   images: ProductImages;
   isLoading?: boolean;
+  artist?: string;
+  genre? :string;
+  album?: string;
+
 }
 export interface ProductCardProps {
   products: Product[];
