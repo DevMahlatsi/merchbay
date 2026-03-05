@@ -34,6 +34,7 @@ export interface Product {
   artist?: string;
   genre? :string;
   album?: string;
+  type?: string;
 
 }
 export interface ProductCardProps {
