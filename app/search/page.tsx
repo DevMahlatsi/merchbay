@@ -41,7 +41,7 @@ export default function SearchPage() {
     const filtered = allProducts.filter(product => {
       const searchTerm = query.toLowerCase();
       return (
-        product.title?.toLowerCase().includes(searchTerm) ||
+        product.title?.toLowerCase().includes(searchTerm)
         // product.description?.toLowerCase().includes(searchTerm)
       );
     });
