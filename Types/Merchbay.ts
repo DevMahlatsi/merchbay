@@ -25,6 +25,7 @@ export interface ProductImages {
 }
 
 export interface Product {
+  tags: string[]
   plid: number;
   title: string;
   variants: Variant[];
