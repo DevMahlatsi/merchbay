@@ -115,7 +115,7 @@ const handleComingSoon = () => {
 
       {/* Price with bigger font */}
       <div className="mt-3 text-2xl font-bold text-gray-800">
-        {/* R {selectedVariant.price} */}
+        R {selectedVariant.price}
       </div>
 
       {/* Buttons */}
