@@ -1,6 +1,7 @@
 export type ProductLayoutProps = {
   title: string;
   products: Product[];
+  isLoading? : boolean
   //we are expecting a json file here
 }
 export type HeaderProps = {
@@ -28,6 +29,7 @@ export interface Product {
   title: string;
   variants: Variant[];
   images: ProductImages;
+  isLoading?: boolean;
 }
 export interface ProductCardProps {
   products: Product[];

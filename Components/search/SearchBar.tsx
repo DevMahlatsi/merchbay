@@ -9,11 +9,11 @@ type SearchSectionProps = {
 };
 
 export default function SearchSection({ onSearch }: SearchSectionProps) {
-  const [showToast, setShowToast] = useState(false);
+  // const [showToast, setShowToast] = useState(false);
 
-  const handleComingSoon = () => {
-    setShowToast(true);
-  };
+  // const handleComingSoon = () => {
+  //   setShowToast(true);
+  // };
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -22,7 +22,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSearch(searchTerm);
+    onSearch(searchTerm.trim());
     
     console.log("Search submitted:", searchTerm);
   };
@@ -43,7 +43,7 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
               <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             </div>
             <button
-              onClick={handleComingSoon}
+              // onClick={}
               type="submit"
               className="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition-colors flex items-center gap-2"
             >
@@ -52,11 +52,11 @@ export default function SearchSection({ onSearch }: SearchSectionProps) {
           </form>
         </div>
       </div>
-      <Toast
+      {/* <Toast
         message="Search feature is not available yet!"
         visible={showToast}
         onClose={() => setShowToast(false)}
-      />
+      /> */}
     </>
     
   );
