@@ -1,6 +1,8 @@
 // app/search/page.tsx
 'use client'
 
+export const dynamic = 'force-dynamic';
+
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import SearchSection from "@/Components/search/SearchBar";
@@ -8,7 +10,7 @@ import { getProducts } from "@/api/Products";
 import { Product } from "@/Types/Merchbay";
 import ProductCard from "@/Components/Product Component/ProductCard";
 
-export const dynamic = 'force-dynamic';
+
 
 export default function SearchPage() {
   const searchParams = useSearchParams();
