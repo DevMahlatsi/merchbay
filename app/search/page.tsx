@@ -8,6 +8,8 @@ import { getProducts } from "@/api/Products";
 import { Product } from "@/Types/Merchbay";
 import ProductCard from "@/Components/Product Component/ProductCard";
 
+export const dynamic = 'force-dynamic';
+
 export default function SearchPage() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
