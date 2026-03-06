@@ -1,10 +1,6 @@
-import dynamic from 'next/dynamic'
 
-const SearchPageClient = dynamic(
-  () => import('./SearchPageClient'),
-  { ssr: false }
-)
+import SearchClientWrapper from './SearchClientWrapper'
 
 export default function SearchPage() {
-  return <SearchPageClient />
+  return <SearchClientWrapper />
 }
