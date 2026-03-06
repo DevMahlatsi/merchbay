@@ -1,11 +1,12 @@
+// app/search/page.tsx
 'use client'
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import ProductsLayout from "@/Components/Products/ProductLayout";
 import SearchSection from "@/Components/search/SearchBar";
 import { getProducts } from "@/api/Products";
 import { Product } from "@/Types/Merchbay";
+import ProductCard from "@/Components/Product Component/ProductCard";
 
 export default function SearchPage() {
   const searchParams = useSearchParams();
@@ -30,7 +31,6 @@ export default function SearchPage() {
     fetchProducts();
   }, []);
 
-  // Filter products based on search query
   useEffect(() => {
     if (!query.trim() || allProducts.length === 0) {
       setFilteredProducts([]);
@@ -39,63 +39,11 @@ export default function SearchPage() {
 
     const searchTerm = query.toLowerCase().trim();
     
-    // Create multiple variations of the search term for better matching
-    const searchVariations = [
-      searchTerm,
-      searchTerm.replace(/\s+/g, '-'), // "kelvin momo" -> "kelvin-momo"
-      searchTerm.replace(/\s+/g, ''),   // "kelvin momo" -> "kelvinmomo"
-      ...searchTerm.split(/\s+/)         // ["kelvin", "momo"]
-    ];
-    
     const filtered = allProducts.filter((product: Product) => {
-      
-      // 1. Search in title
-      if (product.title?.toLowerCase().includes(searchTerm)) {
-        return true;
-      }
-      
-      // 2. Search in artist (if exists)
-      if (product.artist?.toLowerCase().includes(searchTerm)) {
-        return true;
-      }
-      
-      // 3. Search in genre
-      if (product.genre?.toLowerCase().includes(searchTerm)) {
-        return true;
-      }
-      
-      // 4. Search in album
-      if (product.album?.toLowerCase().includes(searchTerm)) {
-        return true;
-      }
-      
-      // 5. Search in type
-      if (product.type?.toLowerCase().includes(searchTerm)) {
-        return true;
-      }
-      
-      // 6. Search in tags - IMPROVED VERSION
-      if (product.tags && Array.isArray(product.tags)) {
-        // Check if any tag matches any variation of the search term
-        const tagMatch = product.tags.some(tag => {
-          const tagLower = tag.toLowerCase();
-          
-          // Direct match
-          if (tagLower.includes(searchTerm)) {
-            return true;
-          }
-          
-          // Check against all variations
-          return searchVariations.some(variation => 
-            tagLower.includes(variation) || variation.includes(tagLower)
-          );
-        });
-        
-        if (tagMatch) {
-          return true;
-        }
-      }
-      
+      if (product.title?.toLowerCase().includes(searchTerm)) return true;
+      if (product.artist?.toLowerCase().includes(searchTerm)) return true;
+      if (product.genre?.toLowerCase().includes(searchTerm)) return true;
+      if (product.tags?.some(tag => tag.toLowerCase().includes(searchTerm))) return true;
       return false;
     });
 
@@ -108,36 +56,32 @@ export default function SearchPage() {
     }
   };
 
-  // Loading state
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <>
         <SearchSection onSearch={handleSearch} />
-        <div className="container mx-auto px-4 py-8">
-          <h1 className="text-2xl font-bold mb-6">Searching...</h1>
-          <ProductsLayout 
-            title="Loading..." 
-            products={[]} 
-            isLoading={true}
-          />
-        </div>
-      </div>
+        <div className="p-4">Loading...</div>
+      </>
     );
   }
 
-  // No search query yet
   if (!query) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <>
         <SearchSection onSearch={handleSearch} />
-        <div className="container mx-auto px-4 py-12 text-center">
-          <p className="text-gray-500">Enter a search term to find products</p>
-        </div>
-      </div>
+        <div className="p-4 text-center">Enter a search term</div>
+      </>
     );
   }
 
-  // No results found
+  // if (filteredProducts.length === 0) {
+  //   return (
+  //     <>
+  //       <SearchSection onSearch={handleSearch} />
+  //       <div className="p-4 text-center">No products found for "{query}"</div>
+  //     </>
+  //   );
+  // }
   if (filteredProducts.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -146,36 +90,32 @@ export default function SearchPage() {
           <p className="text-gray-500 text-lg">No products found for "{query}"</p>
           <p className="text-gray-400 mt-2">Try searching by:</p>
           <ul className="text-gray-400 mt-1">
-            <li>• Product title (e.g., "Poster")</li>
+            <li>• Product title</li>
             <li>• Artist name (e.g., "Kelvin Momo")</li>
             <li>• Genre (e.g., "amapiano")</li>
-            <li>• Tags (e.g., "spiritual", "south african")</li>
+            <li>• Tags</li>
           </ul>
         </div>
       </div>
     );
   }
 
-  // Results found
+  // SIMPLE LAYOUT - just flex wrap with spacing
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <SearchSection onSearch={handleSearch} />
-      <div className="container mx-auto px-4 py-8">
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">
-            Search Results
-          </h1>
-          <p className="text-gray-600 mt-1">
-            Found {filteredProducts.length} product{filteredProducts.length > 1 ? 's' : ''} for "{query}"
-          </p>
-        </div>
+      <div className="p-4">
+        <h1 className="text-xl mb-4">Search Results for "{query}"</h1>
+        <p className="mb-4">{filteredProducts.length} products found</p>
         
-        <ProductsLayout
-          title={`Results for "${query}"`}
-          products={filteredProducts}
-          isLoading={false}
-        />
+        <div className="flex flex-wrap gap-4">
+          {filteredProducts.map((product) => (
+            <div key={product.plid} className="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 p-2">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
