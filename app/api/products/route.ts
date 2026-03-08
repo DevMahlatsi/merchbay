@@ -12,8 +12,8 @@ const products = [
     character: "Monkey D Luffy",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/luffy_wanted_poster_1_main.jpg",
@@ -29,8 +29,8 @@ const products = [
     character: "Roronoa Zoro",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/zoro_wanted_poster_2_main.jpg",
@@ -46,8 +46,8 @@ const products = [
     character: "Usopp",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/usopp_wanted_poster_3_main.jpg",
@@ -63,8 +63,8 @@ const products = [
     character: "Brook",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/brook_wanted_poster_4_main.jpg",
@@ -80,8 +80,8 @@ const products = [
     character: "Trafalgar Law",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/trafalgar_wanted_poster_5_main.jpg",
@@ -97,8 +97,8 @@ const products = [
     character: "Dracule Mihawk",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/mihawk_wanted_poster_6_main.jpg",
@@ -114,8 +114,8 @@ const products = [
     character: "Vista",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/vista_wanted_poster_7_main.jpg",
@@ -131,8 +131,8 @@ const products = [
     character: "Franky",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/franky_wanted_poster_8_main.jpg",
@@ -148,8 +148,8 @@ const products = [
     character: "Portgas D Ace",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/ace_wanted_poster_9_main.jpg",
@@ -165,8 +165,8 @@ const products = [
     character: "Edward Newgate",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/newgate_wanted_poster_10_main.jpg",
@@ -182,8 +182,8 @@ const products = [
     character: "Sanji",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/sanji_wanted_poster_11_main.jpg",
@@ -199,8 +199,8 @@ const products = [
     character: "Gol D Roger",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/roger_wanted_poster_12_main.jpg",
@@ -216,8 +216,8 @@ const products = [
     character: "Tony Tony Chopper",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/anime/one-piece/chopper_wanted_poster_13_main.jpg",
@@ -236,8 +236,8 @@ const products = [
     album: "BAB' MOTHA",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/bab_motha_kabza_de_small_poster_5_main.jpg",
@@ -253,8 +253,8 @@ const products = [
     album: "GNX",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/gnx_kendrick_lamar_poster_8_main.jpg",
@@ -270,8 +270,8 @@ const products = [
     album: "ISIBUKO",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/isibuko_sjava_poster_6_main.jpg",
@@ -287,8 +287,8 @@ const products = [
     album: "IVY LEAGUE",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/ivy_league_kelvin_momo_poster_7_main.jpg",
@@ -305,8 +305,8 @@ const products = [
     releaseYear: 2017,
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/more_life_drake_poster_1_main.jpg",
@@ -322,8 +322,8 @@ const products = [
     album: "N'WANA WA MUTSONGA",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/n'wana_wa_mutsonga_kelvin_momo_poster_3_main.jpg",
@@ -340,8 +340,8 @@ const products = [
     releaseYear: 2016,
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/starboy_the_weeknd_poster_2_main.jpg",
@@ -358,8 +358,8 @@ const products = [
     releaseYear: 2011,
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/take_care_drake_poster_9_main.jpg",
@@ -375,8 +375,8 @@ const products = [
     album: "Thato Yo Modimo",
     variants: [
       // {size: "A2", price: 30.00, available: false},
-      {size: "A3", price: 20.00, available: true},
-      {size: "A4", price: 10.00, available: true},
+      {size: "A3", price: 60.00, available: true},
+      {size: "A4", price: 40.00, available: true},
     ],
     images: {
       main: "/images/music/hiphop/thato_ya_modimo_kelvin_momo_poster_4_main.jpg",
