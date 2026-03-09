@@ -6,4 +6,4 @@ The project was built using a lightweight micro-commerce experiment focused on s
 
 Live Website
 
-https://merchbay.vercel.app
+https://merchbay.vercel.appg
