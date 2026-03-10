@@ -409,8 +409,41 @@ const products = [
     "psychedelic-pop",
     "2016"
   ]
+},{
+  "plid": 24,
+  "title": "Travis Scott Rodeo Album Poster",
+  "type": "music",
+  "genre": "hip-hop",
+  "artist": "Travis Scott",
+  "album": "Rodeo",
+  "variants": [
+    {
+      "size": "A3",
+      "price": 60.00,
+      "available": true
+    },
+    {
+      "size": "A4",
+      "price": 40.00,
+      "available": true
+    }
+  ],
+  "images": {
+    "main": "/images/music/hiphop/rodeo_travis_scott_poster_24_main.jpg"
+  },
+  "tags": [
+    "travis-scott",
+    "rodeo",
+    "hip-hop",
+    "rap",
+    "cactus-jack",
+    "jacques-webster",
+    "astroworld",
+    "album-cover",
+    "minimalist-poster",
+    "tracklist"
+  ]
 }
-
 ];
 
 export async function GET() {
