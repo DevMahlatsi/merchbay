@@ -396,7 +396,7 @@ const products = [
     {size: "A4", price: 40.00, available: true}
   ],
   images: {
-    main: "/images/music/rnb/blond_frank_ocean_poster_1_main.jpg"
+    main: "/images/music/rnb/blond_frank_ocean_poster_23_main.jpg"
   },
   tags: [
     "music",
