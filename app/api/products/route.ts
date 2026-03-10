@@ -383,6 +383,34 @@ const products = [
     },
     tags: ["music", "amapiano", "kelvin-momo", "thato-ya-modimo", "south-african", "piano", "album-poster", "spiritual"]
   },
+  {
+  plid: 23,
+  title: "Blond Album Poster",
+  type: "music",
+  genre: "rnb",
+  artist: "Frank Ocean",
+  album: "Blond",
+  variants: [
+    // {size: "A2", price: 30.00, available: false},
+    {size: "A3", price: 60.00, available: true},
+    {size: "A4", price: 40.00, available: true}
+  ],
+  images: {
+    main: "/images/music/rnb/blond_frank_ocean_poster_1_main.jpg"
+  },
+  tags: [
+    "music",
+    "rnb",
+    "frank-ocean",
+    "blond",
+    "album-poster",
+    "alternative-rnb",
+    "avant-garde",
+    "psychedelic-pop",
+    "2016"
+  ]
+}
+
 ];
 
 export async function GET() {
