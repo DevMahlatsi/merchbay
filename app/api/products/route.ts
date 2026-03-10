@@ -411,7 +411,7 @@ const products = [
   ]
 },{
   "plid": 24,
-  "title": "Travis Scott Rodeo Album Poster",
+  "title": "Rodeo Album Poster",
   "type": "music",
   "genre": "hip-hop",
   "artist": "Travis Scott",
