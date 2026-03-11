@@ -443,6 +443,41 @@ const products = [
     "minimalist-poster",
     "tracklist"
   ]
+},
+{
+  "plid": 24,
+  "title": "Ichigo Kurosaki Bleach TYBW Poster",
+  "type": "anime",
+  "franchise": "Bleach",
+  "character": "Ichigo Kurosaki",
+  "variants": [
+    {
+      "size": "A3",
+      "price": 60.00,
+      "available": true
+    },
+    {
+      "size": "A4",
+      "price": 40.00,
+      "available": true
+    }
+  ],
+  "images": {
+    "main": "/images/anime/bleach/ichigo_kurosaki_poster_24_main.jpg",
+    "mockup": "/images/anime/bleach/ichigo_kurosaki_poster_24_mockup.png"
+  },
+  "tags": [
+    "anime",
+    "bleach",
+    "ichigo-kurosaki",
+    "thousand-year-blood-war",
+    "shinigami",
+    "getsuga-tensho",
+    "bankai",
+    "manga-style",
+    "tybw",
+    "hollow-mask"
+  ]
 }
 ];
 
