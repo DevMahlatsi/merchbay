@@ -463,8 +463,8 @@ const products = [
     }
   ],
   "images": {
-    "main": "/images/anime/bleach/ichigo_kurosaki_poster_24_main.jpg",
-    "mockup": "/images/anime/bleach/ichigo_kurosaki_poster_24_mockup.png"
+    "main": "/images/anime/bleach/ichigo_kurosaki_poster_25_main.jpg",
+    "mockup": "/images/anime/bleach/ichigo_kurosaki_poster_25_mockup.png"
   },
   "tags": [
     "anime",
