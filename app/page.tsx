@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 export default function Home(){
   const router = useRouter();
   const [products, setProducts] = useState<Product[]>([]);
+  const [animeCollection, setAnimeCollection] = useState<Product[]>([]);
   useEffect(() => {
     const fetchData = async () => {
       try {

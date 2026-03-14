@@ -1,6 +1,6 @@
 // app/api/products/route.ts
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const products = [
   // ANIME PRODUCTS
@@ -481,6 +481,6 @@ const products = [
 }
 ];
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   return NextResponse.json(products);
 }
