@@ -445,7 +445,7 @@ const products = [
   ]
 },
 {
-  "plid": 24,
+  "plid": 25,
   "title": "Ichigo Kurosaki Bleach TYBW Poster",
   "type": "anime",
   "franchise": "Bleach",
@@ -477,6 +477,41 @@ const products = [
     "manga-style",
     "tybw",
     "hollow-mask"
+  ]
+},
+{
+  "plid": 26,
+  "title": "Shebeshxt Topless Shxta's Journey Poster",
+  "type": "music",
+  "genre": "lekomp",
+  "artist": "Shebeshxt",
+  "album": "Topless Shxta's Journey",
+  "variants": [
+    {
+      "size": "A3",
+      "price": 60.00,
+      "available": true
+    },
+    {
+      "size": "A4",
+      "price": 40.00,
+      "available": true
+    }
+  ],
+  "images": {
+    "main": "/images/music/lekompo/topless-shxtas-journey_shebeshxt_poster_26_main.jpg"
+  },
+  "tags": [
+    "shebeshxt",
+    "topless-sixtas-journey",
+    "lekompo",
+    "south-african-music",
+    "naqua-sa",
+    "limpopo",
+    "katlego-chauke",
+    "album-poster",
+    "tracklist",
+    // "shebeleza"
   ]
 }
 ];
