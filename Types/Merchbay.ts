@@ -35,6 +35,7 @@ export interface Product {
   genre? :string;
   album?: string;
   type?: string;
+  franchise? : string;
 
 }
 export interface ProductCardProps {
