@@ -6,6 +6,7 @@ import SearchSection from "@/Components/search/SearchBar"
 import { getProducts } from "@/api/Products";
 import { Product } from "@/Types/Merchbay";
 import { useRouter } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home(){
   const router = useRouter();
@@ -34,16 +35,17 @@ export default function Home(){
   
   return(
     <>
+    <Analytics/>
     <SearchSection onSearch={handleSearch} />
     <Hero/>
     <ProductsLayout
       title = "Just Arrived"
       products={products}
     />
-    {/* <ProductsLayout 
+    <ProductsLayout 
       title="Another title"
       products={[]}
-    /> */}
+    />
     {/* <ProductsLayout 
       title="Musiek"
     />

@@ -503,7 +503,7 @@ const products = [
   },
   "tags": [
     "shebeshxt",
-    "topless-sixtas-journey",
+    "topless-shxtas-journey",
     "lekompo",
     "south-african-music",
     "naqua-sa",
