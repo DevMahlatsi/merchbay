@@ -546,6 +546,38 @@ const products = [
     "tracklist",
     "album-poster"
   ]
+},
+{
+    "plid": 28,
+    "title": "Akatsuki Poster",
+    "type": "anime",
+    "franchise": "Naruto",
+    "character": "Akatsuki",
+    "variants": [
+      { "size": "A3", "price": 60.00, "available": true },
+      { "size": "A4", "price": 40.00, "available": true }
+    ],
+    "images": {
+      "main": "/images/anime/naruto/akatsuki_poster_29_main.jpg",
+      "mockup": "/images/anime/naruto/akatsuki_poster_21_mockup.png"
+    },
+    "tags": ["anime", "naruto", "shippuden", "akatsuki", "itachi", "pain", "konan", "kisame", "deidara", "tobi", "sasori", "villains", "shinobi", "organization"]
+},
+{
+    "plid": 29,
+    "title": "Itachi Uchiha Poster",
+    "type": "anime",
+    "franchise": "Naruto",
+    "character": "Itachi Uchiha",
+    "variants": [
+      { "size": "A3", "price": 60.00, "available": true },
+      { "size": "A4", "price": 40.00, "available": true }
+    ],
+    "images": {
+      "main": "/images/anime/naruto/itachi_uchiha_poster_30_main.jpg",
+      "mockup": "/images/anime/naruto/itachi_uchiha_poster_22_mockup.png"
+    },
+    "tags": ["anime", "naruto", "shippuden", "itachi", "itachi-uchiha", "uchiha", "akatsuki", "sharingan", "minimalist", "vector", "poster", "ninja"]
 }
 ];
 

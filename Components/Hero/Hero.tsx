@@ -23,7 +23,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 10000); // 10 second rotation
+    }, 9000); // 10 second rotation
     return () => clearInterval(timer);
   }, []);
 
