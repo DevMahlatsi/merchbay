@@ -513,6 +513,39 @@ const products = [
     "tracklist",
     // "shebeleza"
   ]
+},
+{
+  "plid": 27,
+  "title": "SOS Poster",
+  "type": "music",
+  "genre": "r&b",
+  "artist": "SZA",
+  "album": "SOS",
+  "variants": [
+    {
+      "size": "A3",
+      "price": 60.00,
+      "available": true
+    },
+    {
+      "size": "A4",
+      "price": 40.00,
+      "available": true
+    }
+  ],
+  "images": {
+    "main": "/images/music/rnb/sos_sza_poster_27_main.jpg"
+  },
+  "tags": [
+    "music",
+    "r&b",
+    "sza",
+    "sos",
+    "kill-bill",
+    "top-dawg-entertainment",
+    "tracklist",
+    "album-poster"
+  ]
 }
 ];
 
