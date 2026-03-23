@@ -578,6 +578,22 @@ const products = [
       "mockup": "/images/anime/naruto/itachi_uchiha_poster_22_mockup.png"
     },
     "tags": ["anime", "naruto", "shippuden", "itachi", "itachi-uchiha", "uchiha", "akatsuki", "sharingan", "minimalist", "vector", "poster", "ninja"]
+},
+{
+    "plid": 30,
+    "title": "Solo Leveling Poster",
+    "type": "anime",
+    "franchise": "Solo Leveling",
+    "character": "Sung Jinwoo",
+    "variants": [
+      { "size": "A3", "price": 60.00, "available": true },
+      { "size": "A4", "price": 40.00, "available": true }
+    ],
+    "images": {
+      "main": "/images/anime/solo-leveling/solo_leveling_poster_30_main.jpg",
+      "mockup": "/images/anime/solo-leveling/solo_leveling_poster_23_mockup.png"
+    },
+    "tags": ["anime", "manhwa", "solo-leveling", "sung-jinwoo", "jinwoo", "shadow-monarch", "hunter", "level-up", "action", "fantasy", "dagger"]
 }
 ];
 
