@@ -27,7 +27,7 @@ export default function ProductsLayout({ title,products }: ProductLayoutProps) {
   return (
     <>
       <div className="main-container">
-        <div className="product-container mt-2 bg-amber-50 text-blue-950">
+        <div className="product-container mt-2 text-blue-950">
           <div className="header">
             <Title headingTitle={title} />
           </div>
